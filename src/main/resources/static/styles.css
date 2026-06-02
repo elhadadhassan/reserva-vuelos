@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #84e1f2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra gris que ocupa todo el ancho */
+.gray-bar {
+    background-color: #007bff;
+    width: 100%;
+}
+
+/* Contenedor interno para centrar las pestañas */
+.container-tabs {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Pestañas */
+.tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.tab {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: none;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+}
+
+.tab.active {
+    color: #ffcc00;
+    border-bottom: 3px solid #ffcc00;
+    font-weight: bold;
+}
+
+.tab:hover {
+    color: #ffcc00;
+}
+
+/* Contenido principal - centrado vertical */
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tab-content {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Rectángulo naranja */
+.orange-title-box {
+    background-color: #ff7b00;
+    padding: 12px 24px;
+    margin: 0;
+    text-align: left;
+}
+
+.orange-title-box h2 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.form-container {
+    padding: 24px;
+}
+
+/* Secciones Origen y Destino */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    color: #ff7b00;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 180px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #ff7b00;
+}
+
+.search-btn {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.search-btn:hover {
+    background-color: #e66a00;
+}
+
+
+
+/*   */
+.vuelo-card {
+    background: #f9f9f9;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #ff7b00;
+}
+
+.fecha-vuelo {
+    font-size: 14px;
+    color: #ff7b00;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ruta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.origen, .destino {
+    text-align: center;
+    flex: 1;
+}
+
+.ciudad {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.aeropuerto {
+    font-size: 12px;
+    color: #666;
+}
+
+.vuelo-linea {
+    font-size: 24px;
+    color: #ccc;
+    flex-shrink: 0;
+}
+
+.info-vuelo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.aerolinea-nombre {
+    font-size: 14px;
+    color: #666;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff7b00;
+}
+
+.btn-seleccionar {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.sin-vuelos {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+}
+
+.clase {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+
+/* Contenedor principal de datos */
+.datos-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Formulario interno */
+.form-datos {
+    padding: 30px;
+}
+
+/* Título dentro del contenedor */
+.form-datos h2 {
+    color: #ff7b00;
+    margin-bottom: 20px;
+}
+
+/* Cada campo del formulario */
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Inputs */
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #ff7b00;
+}
+
+/* Botón pagar */
+.btn-pagar {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-pagar:hover {
+    background-color: #e66a00;
+}
+
+/* Botón volver */
+.btn-volver {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #bbb;
+}
+

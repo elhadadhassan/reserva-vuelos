@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscá tu vuelo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Barra gris que ocupa todo el ancho -->
+    <div class="gray-bar">
+        <div class="container-tabs">
+            <div class="tabs">
+                <a href="index.html" class="tab active">Buscá tu vuelo</a>
+                <a href="registro.html" class="tab">Registrate</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="tab-content">
+            <div class="orange-title-box">
+                <h2>Buscá tu vuelo</h2>
+            </div>
+            <div class="form-container">
+                <!-- ORIGEN -->
+                <div class="form-section">
+                    <h3>ORIGEN</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Aeropuerto</label>
+                            <input type="text" id="origenAeropuerto" placeholder="Aeropuerto de origen">
+                        </div>
+                        <div class="form-group">
+                            <label>Ciudad</label>
+                            <input type="text" id="origenCiudad" placeholder="Ciudad de origen">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESTINO -->
+                <div class="form-section">
+                    <h3>DESTINO</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Aeropuerto</label>
+                            <input type="text" id="destinoAeropuerto" placeholder="Aeropuerto de destino">
+                        </div>
+                        <div class="form-group">
+                            <label>Ciudad</label>
+                            <input type="text" id="destinoCiudad" placeholder="Ciudad de destino">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Fecha del vuelo</label>
+                        <input type="date" id="fechaVuelo">
+                    </div>
+                    <div class="form-group">
+                        <label>Aerolínea</label>
+                        <select id="aerolineaSelect">
+                            <option value="">Seleccionar aerolínea</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Clase</label>
+                        <select id="claseSelect">
+                            <option value="ECONOMY">Económica</option>
+                            <option value="TURISTA">Turista</option>
+                            <option value="BUSINESS">Business</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="search-btn" id="buscarBtn">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

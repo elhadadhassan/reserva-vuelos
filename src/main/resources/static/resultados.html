@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="gray-bar">
+    <div class="container-tabs">
+        <div class="tabs">
+            <a href="index.html" class="tab">Buscá tu vuelo</a>
+            <a href="registro.html" class="tab">Registrate</a>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="tab-content">
+            <div class="orange-title-box">
+                <h2>Vuelos disponibles</h2>
+            </div>
+            <div class="form-container">
+                <div id="resultadosBusqueda">
+                    <div class="sin-vuelos">Cargando vuelos...</div>
+                </div>
+                <button class="search-btn" id="btnVolver" onclick="window.location.href='index.html'">Nueva búsqueda</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./resultados.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+com.example.reservaVuelos
+com.example.reservaVuelos.config
+com.example.reservaVuelos.controllers
+com.example.reservaVuelos.dto
+com.example.reservaVuelos.entities
+com.example.reservaVuelos.entities.audit
+com.example.reservaVuelos.repositories
+com.example.reservaVuelos.services
